@@ -16,6 +16,52 @@
 				
 		}
 		
+		@media (min-width: 800px) {
+
+	.divmain{
+		/*position:absolute;*/
+		float:left;
+		border:1px dashed;
+		width:80%;
+		margin-right:0px;
+	
+	}
+	.divmenu
+	{
+		/*position:absolute;*/
+		background-color:yellow;
+		opacity:0.5;
+		filter:Alpha(opacity=50); /* IE8 and earlier */
+		float:right;
+		width:20%;
+		margin-left:0px;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.divmain{
+		
+		border:1px solid;
+	
+	}
+	.divmenu
+	{
+		
+		background-color:red;
+		opacity:0.5;
+		filter:Alpha(opacity=50); /* IE8 and earlier */
+		
+	}
+
+}
+
+
+
+.divmenu:hover{opacity:1;}
+
+		
 	</style>
 	
 </head>
