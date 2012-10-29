@@ -1,89 +1,254 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
 	<style type="text/css">
-		#main {width:50%;margin-left:auto;margin-right:auto;}
-		
-		.centred-text {text-align:center}
-		.left-align-text {text-align:left}
-		.grey-background {background-color:#E9E9E1}
-		.section {border:1px dashed}
-		@media print {
-				.centred-text {text-align:center}
-				#main {width:100%;margin-left:auto;margin-right:auto;}
-				.grey-background {background-color:#E9E9E1}
-				
+	#container {
+		width:70%;
+		margin:auto;
+	}
+	
+	@media print{
+		body {
+			font-size:0.7em;
 		}
-		
-		@media (min-width: 800px) {
-
-	.divmain{
-		/*position:absolute;*/
-		float:left;
-		border:1px dashed;
-		width:80%;
-		margin-right:0px;
+		#container {
+			width:100%
+		}
+	}
+	
+	div.section {
 	
 	}
-	.divmenu
-	{
-		/*position:absolute;*/
-		background-color:yellow;
-		opacity:0.5;
-		filter:Alpha(opacity=50); /* IE8 and earlier */
+	
+	div.spacer {
+		clear: both;
+	}
+	
+	div.content {
 		float:right;
-		width:20%;
-		margin-left:0px;
+		display:inline;
+		width:75%;
+		border-left:1px dashed;
+		text-align:justify;
+		line-height: 1.5;
 	}
-
-}
-
-@media (max-width: 400px) {
-
-	.divmain{
-		
-		border:1px solid;
+	div.content p {padding-left:10px;}
 	
-	}
-	.divmenu
-	{
-		
-		background-color:red;
-		opacity:0.5;
-		filter:Alpha(opacity=50); /* IE8 and earlier */
-		
+	div.content ul {
+		padding-left:20px;
 	}
 
-}
-
-
-
-.divmenu:hover{opacity:1;}
-
+	div.side {
+		float:left;
+		display:inline;
+		width:23%;
+	}
+	
+	div.side p {
+		word-wrap:break-word;
+	}
+	
+	p.section_title {
+		font-size:1.5em;
+	}
+	
+	p.header {
+		font-size:2.5em;
+		text-align:center;
+		margin:20px;
+	}
+		
+	p.desc {
+		
+		text-align:justify;
+	}
+	
+	p.contact {
+		font-size:0.8em;
+	}
 		
 	</style>
 	
 </head>
 
 <body>
-<div id="main">
-	<div id="header">
-		<p class="centred-text grey-background section">
-			<span style="font-size:xx-large;font-weight:bold">Iyed BENNOUR</span><br/>
-			<span class="left-align-text">
+<div id="container">
+	
+	<div class="section">
+		<div class="spacer">
+			<hr/>
+		</div>
+		<div class="content">	
+			<p class="header">
+				Iyed BENNOUR <br/>
+				Software Engineer
+			</p>
+			<p class="desc">
+			Experienced Software Engineer with extensive knowledge of software design and development. 
+			Strong experience in designing, implementing and delivering large software systems with strong requirements of performance, 
+			quality and reliability.
+			Excellent knowledge of the software life cycle management and development processes.
+			Team player with excellent communication. Fast learner. Proven problem solving skills.
+			Dedicated to maintain up-to-date industry knowledge and technical skills.
+			</p>
+		</div>
+		<div class="side">
+			<p class="contact">
 				Tel: +33612110140 <br/>
 				e-mail: iyed.bennour@gmail.com <br/>
-				Adresse: 1, Rue Pasteur, 92500 Rueil-Malmaison.
-		</span>
-		</p>
+				Adresse: 1, Rue Pasteur, 92500 <br/>
+				Rueil-Malmaison, France.
+			</p>
+		</div>
+		<div class="spacer">
+			&nbsp;
+		</div>
 	</div>
-	<div id="plate">
-		<p class="centred-text grey-background section">
-		<span style="font-size:xx-large;font-weight:bold">Software Engineer</span> <br/>
-		Experienced Software with extensive knowledge in various software technologies
-		</p>
+	<!-- Profil est formation -->
+	
+	<div class="section">
+		<div class="spacer">
+			<hr/>
+		</div>
+		
+		<div class="side">
+				
+			<h3>Education</h3>
+				
+		</div>
+		<div class="content">	
+			<ul>
+				<li>International Master In Communication Networks Engineering, Scuola Sant'Anna - Pisa, Italy - 2007</li>
+				<li>Computer Science Engineer Diploma, Ecole Nationale des Sciences de l'informatique - Tunis, La Manouba, Tunisia - 2005</li>
+			</ul>
+		</div>
+		<div class="spacer">
+			&nbsp;
+		</div>
 	</div>
+	<!-- Profil est formation -->
+	
+	
+	<!-- Comptences -->
+	<div class="section">
+		<div class="spacer">
+			<hr/>
+		</div>
+		<div class="side">
+			<h3>Functional Expertise</h3>
+		</div>
+		<div class="content">
+			<ul>
+				<li>Design, implement and deliver technology solutions in cooperation with product managers.</li>
+				<li>Strong experience in delivering products with mutiple dependencies and involving multiple teams.</li>
+				<li>Actively participate in workload estimate and planning of software releases.</li>
+				<li>Experience of working as a member of a cross-functional team.</li>
+				<li>Significant experience in the Scrum process.</li>
+			</ul>
+		</div>
+		<div class="spacer">
+			&nbsp;
+		</div>
+	</div>
+	<!-- Comptences -->
+	<!-- Technical Expertise -->
+	<div class="section">
+		<div class="spacer">
+			<hr/>
+		</div>
+		<div class="side">
+			<h3>Technical Expertise</h3>
+		</div>
+		<div class="content">
+			<ul>
+				<li>Extensive expertise in Object-Oriented Analysis/Design</li>
+				<li>Algorithms and data structures</li>
+				<li>Expertise in  UML</li>
+				<li>Expertise in Design Patterns (Gof, GRASP)</li>
+				<li>Extensive programming expertise in C, C++ (in GNU/Linux and Win32) and Java</li>
+				<li>Practice in .NET (C#, XAML) and Python</li>
+				<li>Expertise in UNIX shell and the GNU/Linux system</li>
+				<li>Expertise in web technologies: HTML5, JavaScript (jquery), CSS3, HTTP protocol and web frameworks</li>
+				<li>Extensive expertise in multi-threaded software design and development</li>
+				<li>Expertise in asynchronous, event-driven software.</li>
+				<li>Extensive expertise in designing networked software.</li>
+				<li>Deep knowledge of TCP/IP protocol stack.</li>
+			</ul>
+		</div>
+		<div class="spacer">
+			&nbsp;
+		</div>
+	</div>
+	<!-- Technical Expertise -->
+	
+	<!-- Experience Pro -->
+	<div class="section">
+		<div class="spacer">
+			<hr/>
+		</div>
+		<div class="side">
+			<h3>Professional Experience</h3>
+		</div>
+		<div class="content">
+			<ul>
+				<li>Software Engineer / Alcatel-Lucent, Paris Area, France - August 2008-Present:</li>
+					Design, implementation and testing of multi-threaded real-time embedded software of 
+					a microwave wireless transmission telecommunication equipment.
+					<ul>
+						<li>Object-oriented Analysis/Design in UML</li>
+						<li>C++ development (vxWorks and Win32)</li>
+						<li>Unit testing</li>
+						<li>ClearCase for configuration management</li>
+						<li>Continuous integration</li>
+						<li>Defects investigation and fixing</li>
+					</ul>
+					<br/>
+				<li>Software Engineer / Alcatel-Lucent, Paris Area, France - January 2008-Jun 2008:</li>
+					Design, implementation and testing of a RADIUS (for  Authentication, Authorization, Accounting) based server for 
+					a Wireless Network (WiMAX)
+					<ul>
+						<li>Object-oriented Analysis/Design</li>
+						<li>C++ development (Linux)</li>
+						<li>Linux kernel development</li>
+						<li>Python scripting for test automation</li>
+						<li>ClearCase for configuration management</li>
+					</ul>
+					<br/>
+				<li>Software developer / NextWorks, Pisa, Italy - Jun 2007-December 2007 </li>
+					Research project: Design and implementation of the control plane software of a optical fiber data transport network</li>
+					<ul>
+						<li>Design and implementation of a the solution in C++</li>
+						<li>Open source OSPF router software customization</li>
+						<li>Linux system proramming in C language</li>
+					</ul>
+					<br/>
+				<li>Embedded software Engineer / Sagem-Communication, Tunis Area, Tunisia - March 2006–October 2006</li>
+					Design, implementation and testing of kernel drivers and user-land applications of a Linux bases networking and telephony gateway.
+					<ul>
+						<li>Linux kernel and drivers development</li>
+						<li>Linux system programming in C</li>
+						<li>multi-threaded application programming</li>
+						<li>Telephony software (MGCP/PSTN) design, implementation and testing</li>
+					</ul>
+					<br/>
+				<li>Software Developer / GL-Trade, Tunis Area, Tunisia - July 2005-February 2006</li>
+					Design, implementation and testing a stock exchange order management server.
+					<ul>
+						<li>Development and maintenance of an order management server in C++</li>
+						<li>Design and implementation of a FIX protocol Client simulator in C++</li>
+						<li>Unit testing and support of validation and integration teams</li>
+					</ul>
+			</ul>
+		</div>
+
+		<div class="spacer">
+			<hr/>
+		</div>
+	</div>
+	<!-- Experience Pro -->
+	
+	
 </div>
 
 
